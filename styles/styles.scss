@@ -15,7 +15,7 @@ body {
 .left {
   height: 600px;
   width: 600px;
-  background: url("../images/bg-pattern-desktop.svg");
+  background-image: url("../images/bg-pattern-desktop.svg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -23,7 +23,7 @@ body {
 .right {
   height: 600px;
   width: 400px;
-  background: url("../images/hero-desktop.jpg");
+  background-image: url("../images/hero-desktop.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
