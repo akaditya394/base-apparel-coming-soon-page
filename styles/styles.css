@@ -1,5 +1,7 @@
 body {
   background-color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
 }
 
 .flexbox-container {
@@ -39,5 +41,121 @@ body {
 .upper {
   height: 20%;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+}
+
+.name,
+.large-text {
+  width: 300px;
+}
+
+.large-text {
+  margin-top: 40px;
+}
+
+.lower {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 420px;
+}
+
+.para {
+  width: 50%;
+  text-align: left;
+  font-size: 16px;
+  color: #ce9797;
+}
+
+input {
+  margin-left: 0%;
+  height: 35px;
+  border-radius: 20px 0 0 20px;
+  font-family: "Josefin Sans", sans-serif;
+  padding-left: 20px;
+  border: 1px solid #ce9797;
+  color: #ce9797;
+}
+
+input:focus {
+  outline: none !important;
+}
+
+.btn {
+  position: absolute;
+  z-index: 1;
+  height: 40px;
+  width: 60px;
+  border-radius: 20px;
+  margin-left: -20px;
+  border: none;
+  outline: none;
+  background-color: #f96262;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #ce9797;
+  width: 75px;
+}
+
+@media (max-width: 1024px) {
+  .right {
+    display: none;
+  }
+  .mobile-image {
+    background-image: url("../images/hero-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .mobile-image {
+    background-image: url("../images/hero-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    width: 100%;
+  }
+  .left {
+    width: auto;
+  }
+  p {
+    text-align: center;
+  }
+  .upper {
+    text-align: center;
+  }
+  .large-text {
+    text-align: center;
+  }
+  .attribution {
+    display: none;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
